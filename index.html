@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c30921150a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/LOGO.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi,I'm <span>Nithin</span><br>Lokesh From India</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Mypic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>To secure a challenging position in a reputable organization to expand my learning's, knowledge, and skills.
+                    Secure a responsible career opportunity to fully utilize my training and skills, while making a significant
+                    contribution to the success of the company.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>Java,Python</li>
+                            <li><span>Web Development</span><br>HTML,CSS and JAVASCRIPT</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Software developer</span><br>Designing Web</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023</span><br>Information Science and Engineering at P.E.S College of Engineering,Mandya.</li>
+                            <li><span>2019</span><br>PU from SV PU College,Bengaluru.</li>
+                            <li><span>2017</span><br>SSLC[ICSE] from Bethel International Public School, Ramanagara.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!----------------------Projects----------------------
+        <div id="Projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="Projects-list">
+                    <div>
+                        <i class="fa-solid fa-camera"></i>
+                        <h2>Human Action Recognition in Videos</h2>
+                        <p>The main idea behind the application of Human Action Recognition is the use of
+                        deep neural networks for recognizing videos. To build an Artificial Intelligence based human action recognition system
+                        invideos using ConvLSTM and LRCN, and compare the results.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <h2>Password Based Door Lock System Using Arduino UNO</h2>
+                        <p> Initially Designed a circuit to automate the door
+                        Unlocking process, so the user need not to carry the door lock keys along with him, he can just remember the password
+                        and use it later to open the door.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h2>Simple Password Strength Background website</h2>
+                        <p>Built a simple login form using HTML ,CSS and JavaScript. It contains
+                        email input and password, and a blurry image in the background. When we enter a strong password the blurry will remove
+                        and the background will display clearly step by step.</p>
+                    </div>
+               </div>
+            </div>
+        </div>------------------------->
+       <!-------------------------------------Portfolio----------------->
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/PIc4.jpeg"> 
+                    <div class="layer">
+                        <h3>Human Action Recogntion in Videos</h3>
+                        <p>The main idea behind the application of Human Action Recognition is the use of
+                        deep neural networks for recognizing videos. To build an Artificial Intelligence based human action recognition system
+                        in videos using ConvLSTM and LRCN, and compare the results.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Pic5.jpeg">
+                    <div class="layer">
+                        <h3>Password Based Door Lock System Using Arduino UNO</h3>
+                        <p>Initially Designed a circuit to automate the door
+                        Unlocking process, so the user need not to carry the door lock keys along with him, he can just remember the password
+                        and use it later to open the door.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Pic1.jpeg">
+                    <div class="layer">
+                        <h3>Simple Password Strength Background website</h3>
+                        <p>Built a simple login form using HTML ,CSS and JavaScript. It contains
+                        email input and password, and a blurry image in the background. When we enter a strong password the blurry will remove
+                        and the background will display clearly step by step.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+       </div>
+       </div>
+       <!--------------------------------------Contact---------------->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>nithinhl14@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7899101226</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/nithin-h-l-b6a9401a4"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Nithin H L.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Nithin1413 </p>
+        </div>
+       </div>
+
+
+        <script>
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                 for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyhL08bLc454kBNB2843_jes4ioq7SfF7Bt3SnPX4fJBYuw0iV7bS2muyMbp76XtDQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function(){
+                            msg.innerHTML =""
+                        },5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+</body>
+</html> 
